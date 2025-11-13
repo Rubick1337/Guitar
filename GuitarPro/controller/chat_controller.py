@@ -1,7 +1,7 @@
 from typing import Any, Tuple
 
-from services.api_client import ApiError
-from services.chat_service import ChatService
+from GuitarPro.services.api_client import ApiError
+from GuitarPro.services.chat_service import ChatService
 
 
 class ChatController:

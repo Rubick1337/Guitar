@@ -1,9 +1,10 @@
 from datetime import datetime
 from typing import List, Optional
 
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, Field, ConfigDict   # <── добавь ConfigDict
 
-from database.models import MessageRole
+from GuitarPro.database.models import MessageRole
+
 
 
 class MessageResponse(BaseModel):
@@ -23,8 +24,8 @@ class UserRead(UserBase):
     id: int
     created_at: Optional[datetime] = None
 
-    class Config:
-        orm_mode = True
+    # Pydantic v2: включаем чтение из ORM-объектов
+    model_config = ConfigDict(from_attributes=True)
 
 
 class RegisterResponse(BaseModel):
@@ -57,8 +58,7 @@ class ChatRead(BaseModel):
     created_at: Optional[datetime] = None
     updated_at: Optional[datetime] = None
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class MessageCreate(BaseModel):
@@ -72,8 +72,7 @@ class MessageRead(BaseModel):
     content: str
     created_at: Optional[datetime] = None
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 ChatList = List[ChatRead]

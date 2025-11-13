@@ -36,7 +36,7 @@ class WelcomeScreen(Screen):
         main_layout = BoxLayout(orientation='vertical', padding=30, spacing=20)
 
         guitar_image = Image(
-            source='guitar.png',
+            source='guitarWelcome.png',
             size_hint=(1, 0.4),
             allow_stretch=True,
             keep_ratio=True

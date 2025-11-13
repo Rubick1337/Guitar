@@ -11,7 +11,8 @@ from sqlalchemy import Enum as SAEnum
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 import enum
 
-from config.database import Base
+from GuitarPro.config.database import Base
+
 
 
 class MessageRole(str, enum.Enum):

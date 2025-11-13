@@ -40,7 +40,7 @@ class WelcomeScreen(Screen):
 
         # Изображение гитары (ЗАМЕНА эмодзи на картинку)
         guitar_image = Image(
-            source='guitar.png',  # Путь к вашему изображению
+            source='guitarWelcome.png',  # Путь к вашему изображению
             size_hint=(1, 0.4),
         )
         main_layout.add_widget(guitar_image)

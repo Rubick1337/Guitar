@@ -16,7 +16,7 @@ from components.main_menu import MainMenuScreen
 from components.login_screen import LoginScreen
 from components.register_screen import RegisterScreen
 from components.welcome_screen import WelcomeScreen
-from controller.chat_controller import ChatController
+from GuitarPro.controller.chat_controller import ChatController
 from services.api_client import ApiClient
 from services.auth_service import AuthService
 from services.chat_service import ChatService

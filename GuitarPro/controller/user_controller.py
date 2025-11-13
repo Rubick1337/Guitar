@@ -2,9 +2,9 @@
 
 Основная работа с пользователями теперь выполняется через REST API
 (см. services.auth_service и services.user_service)."""
+from GuitarPro.services.auth_service import AuthService
+from GuitarPro.services.user_service import UserService
 
-from services.auth_service import AuthService
-from services.user_service import UserService
 
 
 class UserController:

@@ -8,7 +8,7 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 
-from database.models import User
+from GuitarPro.database.models import User
 from .dependencies import get_db
 
 JWT_SECRET = os.getenv("JWT_SECRET", "change-me")

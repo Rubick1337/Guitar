@@ -1,13 +1,10 @@
-# database/handler.py
 from sqlalchemy.exc import IntegrityError, SQLAlchemyError
 from sqlalchemy import inspect, text
 from typing import List, Optional, Tuple, Any
 
-# Импортируем ВСЕ модели, которые должны быть созданы
-# ВАЖНО: убедись, что в database/models/__init__.py реэкспортируются эти имена
-from database.models import User, Chat, ChatMessage, MessageRole
+from GuitarPro.database.models import User, Chat, ChatMessage, MessageRole
+from GuitarPro.config.database import create_database_connection, Base
 
-from config.database import create_database_connection, Base
 
 
 class DatabaseHandler:

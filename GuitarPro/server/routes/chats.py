@@ -1,12 +1,10 @@
-from typing import List
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-
-from database.models import Chat, ChatMessage, MessageRole, User
-from server import schemas
-from server.auth import get_current_user
-from server.dependencies import get_db
+from ...database.models import Chat, ChatMessage, MessageRole, User
+from .. import schemas
+from ..auth import get_current_user
+from ..dependencies import get_db
 
 router = APIRouter(prefix="/chats", tags=["chats"])
 

@@ -3,7 +3,7 @@ from typing import Generator, Optional
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
 
-from config.database import Base, create_database_connection
+from GuitarPro.config.database import Base, create_database_connection
 
 _engine, _SessionLocal = create_database_connection()
 

@@ -22,7 +22,7 @@ BAR_BG = (0.05, 0.05, 0.05, 1)
 TAB_BG = (0.10, 0.10, 0.10, 1)
 
 ICON: Dict[str, tuple[str, str]] = {
-    "autotune": ("assets/icons/guitar.png", "assets/icons/autotune_active.png"),
+    "autotune": ("assets/icons/guitarWelcome.png", "assets/icons/autotune_active.png"),
     "chords": ("assets/icons/accord.png", "assets/icons/chords_active.png"),
     "assistant": ("assets/icons/gpt.png", "assets/icons/assistant_active.png"),
     "profile": ("assets/icons/profile.png", "assets/icons/profile_active.png"),

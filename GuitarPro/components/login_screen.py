@@ -59,7 +59,7 @@ class LoginScreen(Screen):
         main_layout.add_widget(back_container)
 
         guitar_image = Image(
-            source='guitar.png',
+            source='guitarWelcome.png',
             size_hint=(1, 0.3),
             allow_stretch=True,
             keep_ratio=True
